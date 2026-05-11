@@ -15,6 +15,10 @@ import teacherRoutes from "./src/routes/teachers.js";
 import registerTeacherRoutes from "./src/routes/registerTeacher.js";
 import loginTeacherRoutes from "./src/routes/loginTeacher.js";
 import recoveryPasswordTeacherRoutes from "./src/routes/recoveryPasswordTeacher.js";
+// materias
+import subjectRoutes from "./src/routes/subjects.js";
+// payments
+import paymentsRoutes from "./src/routes/payments.js";
 //logout
 import logoutRoutes from "./src/routes/logout.js";
 
@@ -39,5 +43,7 @@ app.use("/api/teachers", teacherRoutes);
 app.use("/api/registerTeacher", registerTeacherRoutes);
 app.use("/api/loginTeacher", loginTeacherRoutes);
 app.use("/api/recoveryPasswordTeacher", recoveryPasswordTeacherRoutes);
+app.use("/api/subjects", subjectRoutes);
+app.use("/api/payments", paymentsRoutes);
 
 export default app;
