@@ -10,6 +10,11 @@ import loginStudentsRoutes from "./src/routes/loginStudents.js";
 import recoveryPasswordStudentRoutes from "./src/routes/recoveryPasswordStudent.js";
 // especialidades
 import specialityRoutes from "./src/routes/specialities.js";
+// maestros
+import teacherRoutes from "./src/routes/teachers.js";
+import registerTeacherRoutes from "./src/routes/registerTeacher.js";
+import loginTeacherRoutes from "./src/routes/loginTeacher.js";
+import recoveryPasswordTeacherRoutes from "./src/routes/recoveryPasswordTeacher.js";
 //logout
 import logoutRoutes from "./src/routes/logout.js";
 
@@ -30,5 +35,9 @@ app.use("/api/loginStudents", loginStudentsRoutes);
 app.use("/api/recoveryPasswordStudent", recoveryPasswordStudentRoutes);
 app.use("/api/logout", logoutRoutes);
 app.use("/api/specialities", specialityRoutes);
+app.use("/api/teachers", teacherRoutes);
+app.use("/api/registerTeacher", registerTeacherRoutes);
+app.use("/api/loginTeacher", loginTeacherRoutes);
+app.use("/api/recoveryPasswordTeacher", recoveryPasswordTeacherRoutes);
 
 export default app;
